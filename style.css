@@ -1,0 +1,153 @@
+/* General Styles */
+body {
+    margin: 0;
+    overflow: hidden;
+    background-color: rgb(221, 239, 240);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    font-family: Arial, sans-serif;
+}
+
+/* Game Container */
+.game-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Game Area */
+.game-area {
+    position: relative;
+    width: 350px;
+    height: 650px;
+    border: 5px solid #333;
+    overflow: hidden;
+    background-color: #222;
+}
+
+/* Road */
+
+.road {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    /* background-image: linear-gradient(to bottom, #444 10%, #555 90%);
+    animation: moveRoad 1s linear infinite; */
+    background-size: 100% 100%;
+    background-image: url("./assets/12.jpg");
+}
+
+/* @keyframes moveRoad {
+    0% { background-position-y: 0; }
+    100% { background-position-y: 100%; }
+} */
+
+/* Score */
+.score {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 20px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+/* Goat */
+.goat {
+    position: absolute;
+    width: 70px;
+    height: 90px;
+    /* background-color: blue; */
+    bottom: 20px;
+    left: 125px;
+    border-radius: 50%;
+    display: flex;
+}
+
+.goat img {
+    transform: scale(1.3);
+}
+
+/* Objects */
+.object {
+    position: absolute;
+    width: 110px;
+    height: 140px;
+    top: -50px; /* Start off screen */
+}
+
+.leaf {
+      /* background-color: gold; */
+      border-radius: 50%;
+      display: flex;
+}
+
+.bike {
+    /* background-color: red; */
+    border-radius: 10%;
+    display: flex;
+}
+/* Controls */
+.controls {
+    position: relative;
+    width: 80%;
+    margin-top: 20px;
+}
+.left-button.rightbutton{
+    position:absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    border: none;
+    padding: 10px 20px;
+    font-size: 24px;
+    cursor: pointer;
+}
+.left-button{
+    left: 0%;
+
+}
+.rightbutton{
+    right: 0%;
+}
+.start-game{
+    position:absolute;
+    
+}
+/* Game Over Screen */
+#game-over {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 10px;
+    display: none; /* Hidden by default */
+}
+
+/* Buttons */
+button {
+    margin: 5px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #ff5722;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #e64a19;
+}
+
+/* Created By */
+.created-by {
+    margin-top: 20px;
+    color: #000000;
+}
+
