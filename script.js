@@ -12,7 +12,7 @@ const gameAudio = document.getElementById('game-audio');
 const leftButton = document.getElementById('left-button');
 const rightButton = document.getElementById('right-button');
 const gameArea = document.getElementById('game-area');
-const gameOverSound = new Audio('assets/game over.m4a'); // Path to your Game Over sound
+const gameOverSound = new Audio('game over.m4a'); // Path to your Game Over sound
 const retrySound = new Audio(''); // Path to your Retry sound
 
 let score = 0;

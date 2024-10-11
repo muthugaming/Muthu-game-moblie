@@ -35,7 +35,7 @@ body {
     /* background-image: linear-gradient(to bottom, #444 10%, #555 90%);
     animation: moveRoad 1s linear infinite; */
     background-size: 100% 100%;
-    background-image: url("./assets/12.jpg");
+    background-image: url("12.jpg");
 }
 
 /* @keyframes moveRoad {
