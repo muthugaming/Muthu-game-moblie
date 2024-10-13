@@ -10,7 +10,7 @@ const playerSelection = document.getElementById('player-selection');
 const selectGoatButton = document.getElementById('select-goat');
 const gameAudio = document.getElementById('game-audio');
 const gameArea = document.getElementById('game-area');
-const gameOverSound = new Audio('assets/game over.m4a');
+const gameOverSound = new Audio('game over.m4a');
 const fullscreenButton = document.getElementById('fullscreen-button'); // Full Screen Button
 
 let score = 0;
