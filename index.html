@@ -8,6 +8,7 @@
 <body>
     <div class="game-container">
         <button id="start-game">Start Game</button>
+        <button id="fullscreen-button">Full Screen</button> <!-- Full Screen Button -->
         <div id="player-selection" style="display:none;">
             <h2>Select Player</h2>
             <button id="select-goat">Goat</button>
@@ -16,32 +17,26 @@
         
         <div class="game-area" id="game-area">
             <div class="road">
-                <div id="score" class="score">Score: 0</div>
-                <div class="goat" id="goat">
-                    <img src="v3.png" alt="goat">
-                </div>
-                <div class="object leaf" id="leaf">
-                    <img src="h.png" alt="leaf">
-                </div>
-                <div class="object bike" id="bike">
-                    <img src="giphy.gif" alt="bike">
-                </div>
-            </div>
-        </div>
-        
-        <div class="controls">
-            <button id="left-button">Left</button>
-            <button id="right-button">Right</button>
-        </div>
-        
-        <div class="created-by">Created By Muthu</div>
-        
-        <div id="game-over" style="display: none;">
+                <div id="game-over" style="display: none;">
             <h2>Game Over!</h2>
             <p>Your Score: <span id="final-score"></span></p>
             <button id="retry-button">Retry</button>
+            </div>
+                <div id="score" class="score">Score: 0</div>
+                <div class="goat" id="goat">
+                    <img src="assets/v3.png" alt="goat">
+                </div>
+                <div class="object leaf" id="leaf">
+                    <img src="assets/h.png" alt="leaf">
+                </div>
+                <div class="object bike" id="bike">
+                    <img src="assets/giphy.gif" alt="bike">
+                  
+                </div>
+            </div>
         </div>
-        <audio id="game-audio" src="game sfx 1.mp3" loop></audio>
+        <div class="created-by">Created By Muthu</div>
+        <audio id="game-audio" src="./assets/game sfx 1.mp3" loop></audio>
     </div>    
     <script src="script.js"></script>
 </body>
